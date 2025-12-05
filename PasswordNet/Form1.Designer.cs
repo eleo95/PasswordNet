@@ -50,7 +50,8 @@
             textResult.Name = "textResult";
             textResult.ReadOnly = true;
             textResult.Size = new Size(198, 43);
-            textResult.TabIndex = 0;
+            textResult.TabIndex = 10;
+            textResult.TabStop = false;
             textResult.TextAlign = HorizontalAlignment.Center;
             // 
             // checkLower
@@ -99,14 +100,14 @@
             inputSize.Location = new Point(11, 22);
             inputSize.Name = "inputSize";
             inputSize.Size = new Size(177, 35);
-            inputSize.TabIndex = 5;
+            inputSize.TabIndex = 0;
             // 
             // btnGenerate
             // 
             btnGenerate.Location = new Point(70, 314);
             btnGenerate.Name = "btnGenerate";
             btnGenerate.Size = new Size(100, 34);
-            btnGenerate.TabIndex = 6;
+            btnGenerate.TabIndex = 5;
             btnGenerate.Text = "Generar";
             btnGenerate.UseVisualStyleBackColor = true;
             btnGenerate.Click += btnGenerate_Click;
@@ -144,7 +145,7 @@
             Controls.Add(groupCheckBox);
             Controls.Add(textResult);
             Name = "Form1";
-            Text = "PkGen.NET";
+            Text = "Psswrd.NET";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)inputSize).EndInit();
             groupCheckBox.ResumeLayout(false);

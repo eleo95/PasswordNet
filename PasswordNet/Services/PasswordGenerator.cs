@@ -21,11 +21,9 @@ namespace PasswordNet.Services
 
             for (int i = 0; i < length; i++)
             {
-                byte[] randomNumber = new byte[4];
-                random.GetBytes(randomNumber);
+                int index = RandomNumberGenerator.GetInt32(chars.Length);
+                result[i] = chars[index];
 
-                int index = BitConverter.ToInt32(randomNumber, 0) & int.MaxValue;
-                result[i] = chars[index % chars.Length];
             }
 
             return new string(result);
